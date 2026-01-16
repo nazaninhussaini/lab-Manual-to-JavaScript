@@ -119,8 +119,88 @@ switch(furet){
       console.log("سیب به رنگ زرد سرخ سبز موجود است");
       break;
    case "oreang":
-      console.log ("نارنج به رنک نارنجی موجو است");
+      console.log ("مالته به رنک نارنجی موجو است");
       break;
-   case "anar":
-      console.log("انار به رنگ سفید وسرخ موجود است")         
+   case "grape":
+      console.log("انگور به رنگ سبز وسرخ و سیاه موجود است")         
+}
+//سوال ششم
+const work = prompt("سطح کار تون را بنویسید");
+switch(work){
+   case "admin":
+      console.log("شما مدیر بخش هستید.");
+      break;
+   case "editor":
+      console.log("شما یک ایدوتور هستید.");
+      break;
+   case "viewer":
+      console.log("شما یک بیننده هستید.");
+      break;
+   case "guest":
+      console.log("شما یک مهمان هستید. قدم تان روی چشمم مان");
+      break;      
+}
+//سوال هفتم
+const math = prompt("یک علامه ریاضی را اضافه کنید");
+switch(math){
+   case "*":
+      console.log("ضرب اولین عملیه ریاضیکی است");
+      break;
+   case "/":
+      console.log("تقسیم دومین عملیه ریاضیکی است");
+      break;
+   case "+":
+      console.log("جمع سومین عملیه ریاضیکی است");
+      break;
+   case "-":
+      console.log("تفریق جهارمین عملیه ریاضیکی است");
+      break;
+   case "%":
+      console.log("موژ برای فیصدی گرفتن است");
+      break;
+   default:
+      console.log("لطفا عملیه های ریاضی مثل +و-و*و/و%");
+      break;
+
+}
+//سوال هشتم
+const season = prompt("از چهار فصل سال یک از ان هارا بنویسید تا برای تان نظریه بدهیم");
+switch(season){
+   case "بهار":
+      console.log("این فصل شگوفه های درختان است فصل خیلی زیبا و قشنگ");
+      break;
+   case "تابستان":
+      console.log("این سرسبز ترین فصل سال است قصل میوه های بهشتی");
+      break;
+   case "خزان":
+      console.log("این فصل رزیش برگهای درختان است فصل برگهای نارنجی است");
+      break;
+   case "زمستان":
+      console.log("این فصل زیبایی و دوباره جان گرفتن زمین است زمین مثل یک عروس لباس سفید برتن میکند");
+      break;
+   default:
+      console.log("لطفا به فارسی فصل سال را بنویسید.")
+}
+
+//سوال 11
+const faile = prompt("نوعیت فایل تان را وارد کنید");
+switch(faile){
+   case "text":
+      console.log("Not pat");
+      break;
+   case "mp4":
+      console.log("windows media player");
+      break;
+   case "png":
+      console.log("chorom");
+      break;
+   case "jpg":
+      console.log ("photo");
+      break;
+   case "pdf":
+      console.log("Word");
+      break;
+   default:
+      console.log("please add from this list(text,mp4,png,jpg,pdf)")
+
 }
