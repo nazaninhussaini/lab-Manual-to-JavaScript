@@ -110,3 +110,17 @@ switch(direction){
         console.log("شما جهت درست انتخاب نکردید لطفا دوباره امتحان کنید");        
 }
 //سوال پنجم
+const furet = "banana";
+switch(furet){
+   case "banana":
+      console.log("کیله به رنگ زرد و سبز موجود است");
+      break;
+   case "appul":
+      console.log("سیب به رنگ زرد سرخ سبز موجود است");
+      break;
+   case "oreang":
+      console.log ("نارنج به رنک نارنجی موجو است");
+      break;
+   case "anar":
+      console.log("انار به رنگ سفید وسرخ موجود است")         
+}
