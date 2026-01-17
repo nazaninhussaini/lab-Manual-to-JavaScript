@@ -110,7 +110,7 @@ switch(direction){
         console.log("شما جهت درست انتخاب نکردید لطفا دوباره امتحان کنید");        
 }
 //سوال پنجم
-const furet = "banana";
+const furet = "appul";
 switch(furet){
    case "banana":
       console.log("کیله به رنگ زرد و سبز موجود است");
@@ -156,7 +156,7 @@ switch(math){
       console.log("تفریق جهارمین عملیه ریاضیکی است");
       break;
    case "%":
-      console.log("موژ برای فیصدی گرفتن است");
+      console.log("موژول برای فیصدی گرفتن است");
       break;
    default:
       console.log("لطفا عملیه های ریاضی مثل +و-و*و/و%");
@@ -184,21 +184,21 @@ switch(season){
 
 //سوال 11
 const faile = prompt("نوعیت فایل تان را وارد کنید");
-switch(faile){
+switch(true){
    case "text":
-      console.log("Not pat");
+      console.log(" برای تان پیشنهاد میشود.Not pat");
       break;
    case "mp4":
-      console.log("windows media player");
+      console.log(" برای تان پیشنهاد میشود.windows media player");
       break;
    case "png":
-      console.log("chorom");
+      console.log(" برای تان پیشنهاد میشود.chorom");
       break;
    case "jpg":
-      console.log ("photo");
+      console.log (" برای تان پیشنهاد میشود.photo");
       break;
    case "pdf":
-      console.log("Word");
+      console.log(" برای تان پیشنهاد میشود.Word");
       break;
    default:
       console.log("please add from this list(text,mp4,png,jpg,pdf)")
