@@ -1,14 +1,14 @@
 //سوال اول
-for(let i =0 ; i<=10 ; i++){
-    console.log(i)
-}
+//for(let i =1 ; i<=10 ; i++){
+//    console.log(i)
+//}
 //سوال دوم
-for(let a = 0 ; a<=20 ; a+=2){
-    console.log(a)
-}
+//for(let a =1 ; a<=20 ; a+=2){
+ //   console.log(a)
+//}
 //سوال سوم
 let total = 0;
-for(let t =0 ; t<=100 ; t ++){
+for(let t =1 ; t<=100 ; t ++){
     total+=t;
     console.log(total)
 }
