@@ -1,11 +1,11 @@
 //سوال اول
-//for(let i =1 ; i<=10 ; i++){
-//    console.log(i)
-//}
+for(let i =1 ; i<=10 ; i++){
+    console.log(i)
+}
 //سوال دوم
-//for(let a =1 ; a<=20 ; a+=2){
- //   console.log(a)
-//}
+for(let a =1 ; a<=20 ; a+=2){
+   console.log(a)
+}
 //سوال سوم
 let total = 0;
 for(let t =1 ; t<=100 ; t ++){
@@ -60,7 +60,48 @@ for(let s = 6 ; s>= 1 ; s--){
     console.log("*".repeat(s))
 }
 //سوال دهم
-const  num = 14 ;
-let isPrim = true
-
-
+const  num = 11 ;
+let isPrime = true;
+if(num <=1){
+    isPrime = false;
+}else{
+    for(let p = 1; p<Math.sqrt(num);p++){
+        if(num%p === 0){
+            isPrime = false;
+            break;
+        }
+    }
+}
+if(isPrime){
+    console.log("the number is prime");
+}
+else{
+    console.log("the number is not prime");
+}
+//سوال یازدهم
+let tawan = 0 ;
+for(let t = 1 ; t<=10 ; t++){
+    tawan+=t**2;
+}
+console.log(tawan);
+//سوال دوازدهم
+let calculation = 0;
+for (let c = 5; c <= 90; c++){
+    if(c%9 === 0){
+        calculation += 1;
+    }
+}
+console.log(calculation)
+//سوال چهاردهم
+const list = [15,-19,-3,0,8,12,-7,4];
+let positiveTotal = 0;
+let negativeTotal = 0;
+for(let l = 0; l<list.length; l++){
+    if(list[l] > 0){
+        positiveTotal += 1 ;
+    }else if(list[l] < 0){
+        negativeTotal += 1;
+    }
+}
+console.log("positive" +positiveTotal);
+console.log("negative" +negativeTotal);
