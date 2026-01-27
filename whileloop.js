@@ -30,6 +30,14 @@ while(n<whileNumbers.length){
     n++;
 }
 console.log(total);
+//سوال سوم
+let number3 = 123;
+let count = 0;
+while(number3 >0){
+    count++;
+    number3 = Math.floor(number3/10);
+} 
+console.log(count)
 //سوال چهارم
 let number1 = "1234";
 let number2 = "4321";

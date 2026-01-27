@@ -20,12 +20,14 @@ greating("نازنین ","حسینی ");
 //سوال چهارم
 function odd (num){
     if(num %2 ===0){
-        console.log("عدد جفت است")
+        console.log("عدد جفت است");
     }else{
         console.log(" عدد تاق است");
     }
 }
 odd(10);
+//سوال پنجم
+
 //سوال ششم
 function factorial(fac){
     let result = 1;
