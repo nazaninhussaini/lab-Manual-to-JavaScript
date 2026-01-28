@@ -19,15 +19,15 @@ function greating(name,lastName){
 greating("نازنین ","حسینی ");
 //سوال چهارم
 function odd (num){
-    if(num %2 ===0){
-        console.log("عدد جفت است");
-    }else{
-        console.log(" عدد تاق است");
-    }
+    if(num %2 ===0) console.log("عدد جفت است");
+    else console.log(" عدد تاق است");
 }
 odd(10);
 //سوال پنجم
-
+function degree (add){
+    console.log((add* 9)/ 5 + 32 +"farnhait");
+}
+degree(4)
 //سوال ششم
 function factorial(fac){
     let result = 1;
