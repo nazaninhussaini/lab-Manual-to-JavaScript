@@ -38,3 +38,12 @@ function factorial(fac){
 }
 factorial(4);
 //سوال هفتم
+function string (text){
+    let revers = ""
+    for (let i = text.length-1 ; i >=0 ; i--){
+        revers = revers + text[i];
+    }
+    return revers ; 
+}
+const textCont = string("سلام")
+console.log(string("خانه"))
