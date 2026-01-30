@@ -46,4 +46,14 @@ function string (text){
     return revers ; 
 }
 const textCont = string("سلام")
-console.log(string("خانه"))
+console.log(string("خانه"));
+//سوال هشتم
+function sum (list){
+    let total = 0;
+    for(let i =0 ; i<list.length ; i++){
+        total+= list[i];
+    }
+return total
+}
+console.log (sum([6,7,8,9,9,6]))
+
