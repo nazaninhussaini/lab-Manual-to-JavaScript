@@ -56,4 +56,57 @@ function sum (list){
 return total
 }
 console.log (sum([6,7,8,9,9,6]))
+//سوال نهم
+const prime = (a)=>{
+    let isPrime = true;
+    if(a<=1){
+        isPrime = false;
+    }
+    else{
+        for(let i=0 ; i<Math.sqrt(a);i++){
+            if(a%i === 0){
+                isPrime = false;
+                break;
+            }
+        }
+        return isPrime;
+    }
+}
+console.log(prime(30))
+//سوال دهم
+//function Anagram (a,b){
+//    let str1 = a.replace(/\s/g,'').toLowerCase;
+//    let str2 = b.replace(/\s/g,'').toLowerCase;
+//    return str1.split('').sort().join('') === str2.split('').sort().join('');
+//}
+//const result = Anagram("silent","listen");
+//سوال یازدهم
+function getNumbers(...numbers){
+    let max= [0];
+    let min= [0];
+    for (let i =0 ; i< numbers.length;i++){
+        if(numbers[i]>max){
+            max=numbers[i]
+        }
+        else if (numbers[i]<min){
+            min = numbers[i]
+        }
+    }
+    return{minimum:min , maximum :max}
+}
+console.log(getNumbers(2,4,5,6));
+//سوال دوازدهم
+function getText(text){
+    let shomarish = {};
+    for (let i=0;i< text.length;i++){
+        const char = text[i];
+        if(shomarish[char]){
+            shomarish[char]++;
+        }else{
+            shomarish[char] = 1;
+        }
+    }
+    return shomarish;
+}
+console.log(getText("Hi my name is nazanin"))
 
