@@ -109,4 +109,17 @@ function getText(text){
     return shomarish;
 }
 console.log(getText("Hi my name is nazanin"))
+//سوال چهاردم
+function arryNumbers (...numbers){
+    let countNumber = 0
+    let totalNumber = 0;
+    for(let i = 0; i<=numbers.length ;i++){
+        if(numbers[i]>0){
+            countNumber ++
+             totalNumber += numbers[i]
+        }
+    }
+    return totalNumber/countNumber
+}
+console.log(arryNumbers(1,2,3,-8))
 
