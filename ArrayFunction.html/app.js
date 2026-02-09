@@ -15,3 +15,9 @@ const AllNames = name.concat(names);
 const text = ["Hi", "my", "name", "is", "Nazanin"];
 const newText = text.join(" ");
 
+const number = [1,10,12,14];
+
+const result1 = number.forEach(function number(num){
+    return num>1
+})
+

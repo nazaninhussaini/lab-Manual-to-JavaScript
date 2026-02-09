@@ -9,3 +9,7 @@ function geText (text){
     return result;
 }
 const text = geText("Hi1 Nazanin2 how3 are4 you5")
+
+const greeting = "      hi iam nazanin     "
+const namaTrim = greeting.trim();
+const get = greeting.toUpperCase();
