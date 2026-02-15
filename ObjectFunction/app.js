@@ -22,3 +22,42 @@ const revers1 = Object.fromEntries(revers);
 //این میتود اری مان را object تبدیل میکند
 const value = Object.assign(mobileInfo)
 //این میتود باری این استفاده میشود که مارا هم به کلید هم به قیمت به دسترس میسازد
+
+const studentSpecifications ={
+    name : "Nazanin",
+    lastName : "Hussaini",
+    age : 18,
+    score : 98
+}
+const behzad = Object.create(null,{
+    name :{
+        value:"Ali Behzad",
+        writable :true,
+        enumerable: true
+    },
+    lastName:{
+        value: "Husaaini",
+        writable :true,
+        enumerable: true
+    },
+    age :{
+        value: 20,
+        writable :false,
+        enumerable :true
+    },
+    score :{
+        value : 100,
+        writable :false,
+        enumerable : false
+    }
+})
+//freezاین میتود برای این استفاده میشود که ما نمی توانیم در ان نه دیتاوارد کنیم نه تغییرات اورده میتوانیم
+const freezeBehzad = Object.freeze(behzad);
+//isFrozenاین متیود برای این استفاده میشود که که ببینیم یا ای object مان فریز شده یا خیر
+console.log(Object.isFrozen(behzad));
+console.log(Object.isFrozen(freezeBehzad));
+//seal این میتود برای این استفاده میشود که ما میتوانیم تغییرات وارد کنیم اما نمی توانیم دیتا اضافه کنیم 
+const freezeStudent = Object.seal(studentSpecifications);
+//isSeald این میتود برای این استفاده میشود که ببینیم ایا این   object  متن seal شده یا خیر
+console.log(Object.isSealed(studentSpecifications));
+console.log(Object.isSealed(freezeStudent));
