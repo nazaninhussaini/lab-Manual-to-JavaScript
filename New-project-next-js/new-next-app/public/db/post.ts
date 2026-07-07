@@ -1,6 +1,6 @@
 import { post } from "@/app/types/post";
 
-const posts : post[] = [
+export const posts : post[] = [
     {
         id: 1,
         title: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut repellat quam ex fugiat voluptatibus aspernatur maiores? Quo eaque ab numquam? Deserunt tempora aliquam veniam sequi! Perferendis assumenda delectus laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus commodi totam quo excepturi ducimus itaque autem, tempore quisquam harum voluptate sunt nisi eum illo, amet aspernatur accusantium modi sequi culpa.",
