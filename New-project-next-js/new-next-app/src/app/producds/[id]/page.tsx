@@ -1,12 +1,12 @@
-import { product } from "@/public/db/products";
-
+import { notFound } from "next/navigation";
+import { product } from "../../../../public/db/products";
 
 async function Page({params}: {params : Promise<{id:number}>}){
     const {id} = await params;
    const foundProduct = product.find((product)=>{
         return product.id == id;
     })
-    if (!foundProduct) return ;
+    if (!foundProduct) return notFound() ;
     return (
         <div className="w-full h-screen flex justify-center items-center">
             <div className="border rounded-2xl w-1/2 p-9">
