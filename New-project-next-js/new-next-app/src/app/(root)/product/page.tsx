@@ -24,8 +24,8 @@ const productlist =[
 ]
 export default function productPage(){
     return (
-        <div className=" w-full flex  justify-center items-center h-screen">
-           <div className="w-full flex gap-2 max-w-4xl bg-white/80 backdrop-blur-md ">
+        <div className=" w-full flex justify-center items-center h-screen">
+           <div className="w-full flex gap-5 text-purple-500 max-w-4xl p-4 bg-white/80 backdrop-blur-md ">
            {productlist.map((p)=>{
             return(
                 <ProductCard key={p.id} product ={p}/>
