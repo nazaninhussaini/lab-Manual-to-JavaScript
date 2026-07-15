@@ -1,32 +1,12 @@
 import ProductCard from "@/app/componend/product"
+import { MyProduct } from "../../../../public/db/MyProduct"
 
-const productlist =[
-    {
-        id:1,
-        name: "Apple",
-        price: 120,
-    },
-    {
-        id:2,
-        name: "Mango",
-        price: 100,
-    },
-    {
-        id:3,
-        name: "strabiry",
-        price: 70,
-    },
-    {
-        id:4,
-        name: "Melon",
-        price: 90,
-    },
-]
+
 export default function productPage(){
     return (
         <div className=" w-full flex justify-center items-center h-screen">
            <div className="w-full flex gap-5 text-purple-500 max-w-4xl p-4 bg-white/80 backdrop-blur-md ">
-           {productlist.map((p)=>{
+           {MyProduct.map((p)=>{
             return(
                 <ProductCard key={p.id} product ={p}/>
             )
