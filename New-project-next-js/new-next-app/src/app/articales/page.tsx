@@ -1,7 +1,11 @@
-export default function Articals(){
-    return (
-        <div>
-            
-        </div>
-    )
+import React from 'react'
+
+function page() {
+  return (
+    <div>
+      
+    </div>
+  )
 }
+
+export default page

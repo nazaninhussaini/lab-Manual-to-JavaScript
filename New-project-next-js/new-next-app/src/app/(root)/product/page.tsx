@@ -1,7 +1,9 @@
 import ProductCard from "@/app/componend/product"
 import { MyProduct } from "../../../../public/db/MyProduct"
-
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Products",
+};
 export default function productPage(){
     return (
         <div className=" w-full flex justify-center items-center h-screen">
