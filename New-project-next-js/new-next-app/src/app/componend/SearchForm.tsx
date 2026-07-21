@@ -16,7 +16,7 @@ function SearchForm() {
     <div className='w-full px-10 py-2 flex gap-3'>
 
         <input type="text"
-        className='border text-black w-9/12 p-2'
+        className='border text-black rounded-sm w-9/12 p-2'
          value={search}
          onChange={(e)=> setSearch(e.target.value) } />
 
