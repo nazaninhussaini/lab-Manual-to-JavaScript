@@ -15,8 +15,9 @@ function page() {
   return (
     <div>
       {users?.map((x)=>(
-        <div>
-          
+        <div key={x.id} className='w-full max-w-6xl mx-auto border shadow-2xl rounded-2xl'>
+          <h1>{x.name}</h1>
+          <p>{x.email}</p>
         </div>
       ))}
     </div>
