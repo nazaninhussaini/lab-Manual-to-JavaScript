@@ -1,8 +1,21 @@
+import UserCard from '@/componend/user-card';
+import { User } from '@/types/user.type';
 import React from 'react'
 
-function page() {
+async function page() {
+  async function getUsers(){
+   const data = await fetch("https://lsonplaceholder.typicode.com/users",{
+    cache: "no-store",
+   });
+   const responce = data.json();
+   return responce;
+  }
+  const users:User[] = await getUsers();
   return (
-    <div>
+    <div className='w-full max-w-5xl mx-auto flex flex-col gap-4'>
+      {users.map((user)=>(
+        <UserCard key={user.id} user ={user} />
+      ))}
       
     </div>
   )
