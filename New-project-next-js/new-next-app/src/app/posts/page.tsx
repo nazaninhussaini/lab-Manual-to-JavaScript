@@ -8,7 +8,7 @@ function page() {
     const[count,setCount]= useState(1);
     useEffect(()=>{
        async function getPosts (){
-         const data =  await fetch("https://lsonplaceholder.typicode.com/posts");
+         const data =  await fetch("https://jsonplaceholder.typicode.com/posts");
          const respons = await data.json();
          setPosts (respons);
         }

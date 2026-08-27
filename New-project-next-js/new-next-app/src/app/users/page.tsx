@@ -4,9 +4,7 @@ import React from 'react'
 
 async function page() {
   async function getUsers(){
-   const data = await fetch("https://lsonplaceholder.typicode.com/users",{
-    cache: "no-store",
-   });
+   const data = await fetch("https://jsonplaceholder.typicode.com/users");
    const responce = data.json();
    return responce;
   }
