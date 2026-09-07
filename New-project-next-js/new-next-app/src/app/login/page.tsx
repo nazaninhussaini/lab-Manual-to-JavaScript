@@ -9,7 +9,7 @@ function page() {
             <div className='w-full p-3'>
         <button className='text-black text-2xl'><Link href="/">🏠</Link></button>
             </div>
-        <h1 className='text-center text-3xl col-span-2 text-black py-3'>Login Page</h1>
+        <h1 className='text-center text-3xl col-span-2 text-black py-3'>Login Page...</h1>
         </div>
         <form action="">
             <div className='w-full grid grid-cols-2 space-x-7 text-justify max-w-3xl mx-auto'>
